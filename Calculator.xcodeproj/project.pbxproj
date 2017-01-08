@@ -99,13 +99,9 @@
 		4FCCAFA81E22DFE8004B26F1 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				4FCCAFA91E22DFE8004B26F1 /* AppDelegate.swift */,
-				4FCCAFAB1E22DFE8004B26F1 /* ViewController.swift */,
-				4FCCAFAD1E22DFE8004B26F1 /* Main.storyboard */,
-				4FCCAFB31E22DFE8004B26F1 /* Assets.xcassets */,
-				4FCCAFB51E22DFE8004B26F1 /* LaunchScreen.storyboard */,
-				4FCCAFB81E22DFE8004B26F1 /* Info.plist */,
-				4FCCAFB01E22DFE8004B26F1 /* Calculator.xcdatamodeld */,
+				4FCCAFDC1E22E9A4004B26F1 /* Controller */,
+				4FCCAFDB1E22E99A004B26F1 /* View */,
+				4FCCAFDA1E22E854004B26F1 /* Supporting files */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -126,6 +122,34 @@
 				4FCCAFCE1E22DFE8004B26F1 /* Info.plist */,
 			);
 			path = CalculatorUITests;
+			sourceTree = "<group>";
+		};
+		4FCCAFDA1E22E854004B26F1 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				4FCCAFA91E22DFE8004B26F1 /* AppDelegate.swift */,
+				4FCCAFB31E22DFE8004B26F1 /* Assets.xcassets */,
+				4FCCAFB51E22DFE8004B26F1 /* LaunchScreen.storyboard */,
+				4FCCAFB81E22DFE8004B26F1 /* Info.plist */,
+				4FCCAFB01E22DFE8004B26F1 /* Calculator.xcdatamodeld */,
+			);
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+		4FCCAFDB1E22E99A004B26F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4FCCAFAD1E22DFE8004B26F1 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4FCCAFDC1E22E9A4004B26F1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4FCCAFAB1E22DFE8004B26F1 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -509,6 +533,7 @@
 				4FCCAFD31E22DFE8004B26F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4FCCAFD41E22DFE8004B26F1 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +542,7 @@
 				4FCCAFD61E22DFE8004B26F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4FCCAFD71E22DFE8004B26F1 /* Build configuration list for PBXNativeTarget "CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +551,7 @@
 				4FCCAFD91E22DFE8004B26F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
