@@ -11,6 +11,14 @@ import UIKit
 class ViewController: UIViewController {
 
     
+    // MARK: - IBOutlets
+    @IBOutlet weak var display: UILabel!
+    
+    
+    // MARK: - Global Variables & Constants
+    var userIsInTheMiddleOfTyping = false
+   
+    
     // MARK: - Overridden Functions
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +26,35 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    
+    // MARK: - IBActions
+    @IBAction func touchDigit(_ sender: UIButton) {
+        let digit = sender.currentTitle!
+        if userIsInTheMiddleOfTyping {
+            let textCurrentlyInDisplay = display.text!
+            display.text = textCurrentlyInDisplay + digit
+        } else {
+            display.text = digit
+        }
+        userIsInTheMiddleOfTyping = true
+    }
 
+    @IBAction func performOperation(_ sender: UIButton) {
+        userIsInTheMiddleOfTyping = false
+        if let mathematicalSymbol = sender.currentTitle {
+            if mathematicalSymbol == "π" {
+                display.text = String(M_PI)
+            }
+        }
+        
+    }
 
+    @IBAction func resetDisplay(_ sender: UIButton) {
+    }
+    
+    
+    // MARK: - Functions
+    
+    
 }
-
